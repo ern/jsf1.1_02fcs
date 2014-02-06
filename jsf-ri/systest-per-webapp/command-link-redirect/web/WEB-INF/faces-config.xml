@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+ The contents of this file are subject to the terms
+ of the Common Development and Distribution License
+ (the License). You may not use this file except in
+ compliance with the License.
+ 
+ You can obtain a copy of the License at
+ https://javaserverfaces.dev.java.net/CDDL.html or
+ legal/CDDLv1.0.txt. 
+ See the License for the specific language governing
+ permission and limitations under the License.
+ 
+ When distributing Covered Code, include this CDDL
+ Header Notice in each file and include the License file
+ at legal/CDDLv1.0.txt.    
+ If applicable, add the following below the CDDL Header,
+ with the fields enclosed by brackets [] replaced by
+ your own identifying information:
+ "Portions Copyrighted [year] [name of copyright owner]"
+ 
+ [Name of File] [ver.__] [Date]
+ 
+ Copyright 2006 Sun Microsystems Inc. All Rights Reserved
+-->
+
+
+<!DOCTYPE faces-config PUBLIC
+ "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+ "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<faces-config>
+
+  <navigation-rule>
+    <from-view-id>/one.jsp</from-view-id>
+    <navigation-case>
+      <from-outcome>two</from-outcome>
+      <to-view-id>/two.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>three</from-outcome>
+      <to-view-id>/three.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>four</from-outcome>
+      <to-view-id>/three.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>five</from-outcome>
+      <to-view-id>/five.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+  </navigation-rule>
+
+  <navigation-rule>
+    <from-view-id>/two.jsp</from-view-id>
+    <navigation-case>
+      <from-outcome>one</from-outcome>
+      <to-view-id>/one.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>three</from-outcome>
+      <to-view-id>/three.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+
+  </navigation-rule>
+
+  <navigation-rule>
+    <from-view-id>/three.jsp</from-view-id>
+    <navigation-case>
+      <from-outcome>one</from-outcome>
+      <to-view-id>/one.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>two</from-outcome>
+      <to-view-id>/two.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+
+  </navigation-rule>
+
+  <navigation-rule>
+    <from-view-id>/four.jsp</from-view-id>
+    <navigation-case>
+      <from-outcome>two</from-outcome>
+      <to-view-id>/two.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>three</from-outcome>
+      <to-view-id>/three.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>one</from-outcome>
+      <to-view-id>/one.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>five</from-outcome>
+      <to-view-id>/five.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+  </navigation-rule>
+
+  <navigation-rule>
+    <from-view-id>/five.jsp</from-view-id>
+    <navigation-case>
+      <from-outcome>two</from-outcome>
+      <to-view-id>/two.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>three</from-outcome>
+      <to-view-id>/three.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>one</from-outcome>
+      <to-view-id>/one.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+    <navigation-case>
+      <from-outcome>four</from-outcome>
+      <to-view-id>/four.jsp</to-view-id>
+      <redirect />
+    </navigation-case>
+  </navigation-rule>
+
+
+
+</faces-config>

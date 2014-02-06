@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+ Copyright 2004 Sun Microsystems, Inc. All rights reserved.
+ SUN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+-->
+
+<!DOCTYPE faces-config PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+  "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config>
+
+  <managed-bean>
+    <!-- Basic information about this bean -->
+    <description>
+      A test bean.
+    </description>
+    <display-name>TestBean1</display-name>
+    <managed-bean-name>TestBean1</managed-bean-name>
+    <managed-bean-class>
+      com.sun.faces.config.SimpleBean
+    </managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+
+   <component>
+     <component-type>tree</component-type>
+     <component-class>javax.faces.component.UICommand</component-class>
+   </component>
+   <render-kit>
+     <renderer>
+       <renderer-type>tree</renderer-type>
+       <renderer-class>com.sun.faces.renderkit.html_basic.CheckboxRenderer</renderer-class>
+     </renderer>
+   </render-kit> 
+
+   <lifecycle>
+     <phase-listener>com.sun.faces.config.SimplePhaseListener</phase-listener>
+   </lifecycle>
+
+
+</faces-config>

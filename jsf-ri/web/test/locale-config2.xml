@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+ Copyright 2004 Sun Microsystems, Inc. All rights reserved.
+ SUN PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+-->
+
+<!DOCTYPE faces-config PUBLIC
+  "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.1//EN"
+  "http://java.sun.com/dtd/web-facesconfig_1_1.dtd">
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config>
+
+  <application>
+
+    <locale-config>
+      <default-locale>aoeuhoentuhtnhtnhoaenhnhu</default-locale>
+      <supported-locale>ps_PS-at-pq-wp</supported-locale> 
+      <supported-locale>tg-AF-oe-12</supported-locale> 
+      <supported-locale>12-34</supported-locale> 
+      <supported-locale>12-</supported-locale> 
+    </locale-config>
+
+  </application>
+
+</faces-config>
